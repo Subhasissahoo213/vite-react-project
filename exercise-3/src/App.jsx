@@ -2,12 +2,18 @@ import React from "react";
 
 function App() {
 
-  const name = "Subhasis";
+  const fruits = ["Apple", "Banana", "Mango"]; 
 
-  return(
-    <dev>
-      <h1>Hello {name}</h1>
-    </dev>
+  return (
+    <div> 
+      <h2>My Fruit List</h2>
+      <ul>
+        {fruits.map((fruit, index) => (
+          <li key={index}>{fruit}</li>
+        ))}
+      </ul>
+    </div>
   );
 }
+
 export default App;
